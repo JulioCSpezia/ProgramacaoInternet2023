@@ -90,7 +90,7 @@ header nav ul li{
     height: 200px;
     border-radius: 24px 0;
     object-fit: cover;
-    
+
 }
 
 .pacotes .pacotes-title {
@@ -99,4 +99,27 @@ header nav ul li{
     margin: 25px 0;
 }
 
+.pacotes .card-content{
+    padding: 0 15;
+}
 
+.pacotes .card-content ul{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.pacotes .card-content ul li{
+    font-size: 0.6rem;
+    display: flex;
+    align-items: center;
+    margin: 3px;
+    color: rgb(68, 0, 255);
+    font-weight: bold;
+}
+
+.pacotes .card-content li svg{
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+}
