@@ -33,7 +33,7 @@ h1  {
 }
 
 header{
-    background:no-repeat center/cover url('assets/montefuji.jpg');
+    background:no-repeat center/cover url('https://images7.alphacoders.com/790/thumb-1920-790635.jpg');
     height: calc(120vh - 150px);
 }
 
@@ -224,6 +224,12 @@ header nav ul li{
     text-align: center;
 }
 
+#map{
+
+    height: 400px;
+    width: 100%;
+}
+
 .contato {
     padding: 60px;
     background: #e1e8f7;
@@ -254,8 +260,13 @@ header nav ul li{
 .contato .contato-card li{
     font-size: .8rem;
     font-weight: bold;
-    color: gray;
+    color: grey;
     display: flex;
     align-items: center;
 }
 
+.contato .contato-card li svg{
+
+    width: 16px;
+    margin: 10px;
+}
