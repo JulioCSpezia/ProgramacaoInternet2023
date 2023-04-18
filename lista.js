@@ -7,6 +7,7 @@ const botaoremover = document.getElementById("remover");
 const saida = document.getElementById("saida");
 const listEl = document.getElementById("list");
 const searchField = document.getElementById("searchField");
+const botaoseleciona = document.getElementById("selecionar");
 
 
 this.filtLista();
@@ -30,7 +31,7 @@ function inputHandler() {
     filtLista(filteredList);
 }
 
-botaofil.addEventListener("click", inputHandler);
+botaoadicionar.addEventListener("click", inputHandler);
 
 function adicionarNome(){
     nome = searchField.value.toLowerCase(); 
@@ -49,7 +50,7 @@ function adicionarNome(){
 
 }
 
-botaoadd.addEventListener("click", adicionarNome);
+botaoadicionar.addEventListener("click", adicionarNome);
 
 
 function removerNome(){
@@ -65,4 +66,23 @@ function removerNome(){
     
 }
 
-botaorem.addEventListener("click",removerNome)
+botaoremover.addEventListener("click",removerNome)
+
+function seleciona(){
+    if (nameList.length == 0) {
+        alert("Não há nomes para selecionar")      
+        return                                        
+      }
+    if (passa > nameList.length -2){
+        passa = 0
+    }
+    else{
+        passa++;
+    }
+    fillList()
+    
+
+
+    }
+
+botaoseleciona.addEventListener("click", seleciona);
